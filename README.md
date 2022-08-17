@@ -9,28 +9,18 @@ A powerful Google Maps Utils library for iOS
   <img src="Art/img_show_info.png" width="200" height="450">
 </p>
 
-Download
+### Installation
+Installation
 --------
 
-Download the latest AAR from [Maven Central][2] or grab via Gradle:
-```groovy
-implementation 'com.squareup.picasso:picasso:2.8'
+#### CocoaPods
+
+```ruby
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '12.0'
+use_frameworks!
+
+target 'MyApp' do
+  pod 'SerescoMapsUtils', '~> 1.0'
+end
 ```
-or Maven:
-```xml
-<dependency>
-  <groupId>com.squareup.picasso</groupId>
-  <artifactId>picasso</artifactId>
-  <version>2.8</version>
-</dependency>
-```
-
-Snapshots of the development version are available in [Sonatype's `snapshots` repository][snap].
-
-Picasso requires at minimum Java 8 and API 21.
-
-
-ProGuard
---------
-
-If you are using ProGuard you might need to add OkHttp's rules: https://github.com/square/okhttp/#r8--proguard
