@@ -8,13 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		1EFED4B228ACB4AC00BEBBA3 /* SerescoMapsUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EFED4B128ACB4AC00BEBBA3 /* SerescoMapsUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1EFED4BA28ACB4C300BEBBA3 /* MarkerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFED4B928ACB4C300BEBBA3 /* MarkerUtils.swift */; };
+		1EFED4BF28ACB5BA00BEBBA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EFED4BD28ACB5BA00BEBBA3 /* Assets.xcassets */; };
+		1EFED4C028ACB5BA00BEBBA3 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFED4BE28ACB5BA00BEBBA3 /* Colors.swift */; };
+		1EFED4C628ACB5ED00BEBBA3 /* KMLUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFED4C428ACB5ED00BEBBA3 /* KMLUtils.swift */; };
+		1EFED4C728ACB5ED00BEBBA3 /* KMLUtilsError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFED4C528ACB5ED00BEBBA3 /* KMLUtilsError.swift */; };
+		1EFED4CA28ACB5F600BEBBA3 /* MarkerProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFED4C828ACB5F500BEBBA3 /* MarkerProperties.swift */; };
+		1EFED4CB28ACB5F600BEBBA3 /* MarkerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFED4C928ACB5F500BEBBA3 /* MarkerUtils.swift */; };
+		1EFED4CE28ACB5FE00BEBBA3 /* KmlOptionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFED4CC28ACB5FE00BEBBA3 /* KmlOptionType.swift */; };
+		1EFED4CF28ACB5FE00BEBBA3 /* ColorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFED4CD28ACB5FE00BEBBA3 /* ColorType.swift */; };
+		1EFED4D328ACB62400BEBBA3 /* MarkerSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFED4D028ACB62400BEBBA3 /* MarkerSheetViewController.swift */; };
+		1EFED4D428ACB62400BEBBA3 /* ColorSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFED4D128ACB62400BEBBA3 /* ColorSheetViewController.swift */; };
+		1EFED4D528ACB62400BEBBA3 /* KmlSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFED4D228ACB62400BEBBA3 /* KmlSheetViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1EFED4AE28ACB4AC00BEBBA3 /* SerescoMapsUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SerescoMapsUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EFED4B128ACB4AC00BEBBA3 /* SerescoMapsUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SerescoMapsUtils.h; sourceTree = "<group>"; };
-		1EFED4B928ACB4C300BEBBA3 /* MarkerUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerUtils.swift; sourceTree = "<group>"; };
+		1EFED4BD28ACB5BA00BEBBA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1EFED4BE28ACB5BA00BEBBA3 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		1EFED4C428ACB5ED00BEBBA3 /* KMLUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KMLUtils.swift; sourceTree = "<group>"; };
+		1EFED4C528ACB5ED00BEBBA3 /* KMLUtilsError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KMLUtilsError.swift; sourceTree = "<group>"; };
+		1EFED4C828ACB5F500BEBBA3 /* MarkerProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkerProperties.swift; sourceTree = "<group>"; };
+		1EFED4C928ACB5F500BEBBA3 /* MarkerUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkerUtils.swift; sourceTree = "<group>"; };
+		1EFED4CC28ACB5FE00BEBBA3 /* KmlOptionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KmlOptionType.swift; sourceTree = "<group>"; };
+		1EFED4CD28ACB5FE00BEBBA3 /* ColorType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorType.swift; sourceTree = "<group>"; };
+		1EFED4D028ACB62400BEBBA3 /* MarkerSheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkerSheetViewController.swift; sourceTree = "<group>"; };
+		1EFED4D128ACB62400BEBBA3 /* ColorSheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSheetViewController.swift; sourceTree = "<group>"; };
+		1EFED4D228ACB62400BEBBA3 /* KmlSheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KmlSheetViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +53,7 @@
 			children = (
 				1EFED4B028ACB4AC00BEBBA3 /* SerescoMapsUtils */,
 				1EFED4AF28ACB4AC00BEBBA3 /* Products */,
+				F456DF6D915EC83116374879 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,6 +68,8 @@
 		1EFED4B028ACB4AC00BEBBA3 /* SerescoMapsUtils */ = {
 			isa = PBXGroup;
 			children = (
+				1EFED4BC28ACB5AA00BEBBA3 /* utils */,
+				1EFED4BB28ACB5A000BEBBA3 /* assets */,
 				1EFED4B828ACB4B700BEBBA3 /* ui */,
 				1EFED4B128ACB4AC00BEBBA3 /* SerescoMapsUtils.h */,
 			);
@@ -56,9 +79,64 @@
 		1EFED4B828ACB4B700BEBBA3 /* ui */ = {
 			isa = PBXGroup;
 			children = (
-				1EFED4B928ACB4C300BEBBA3 /* MarkerUtils.swift */,
+				1EFED4D128ACB62400BEBBA3 /* ColorSheetViewController.swift */,
+				1EFED4D228ACB62400BEBBA3 /* KmlSheetViewController.swift */,
+				1EFED4D028ACB62400BEBBA3 /* MarkerSheetViewController.swift */,
 			);
 			path = ui;
+			sourceTree = "<group>";
+		};
+		1EFED4BB28ACB5A000BEBBA3 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				1EFED4BD28ACB5BA00BEBBA3 /* Assets.xcassets */,
+				1EFED4BE28ACB5BA00BEBBA3 /* Colors.swift */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		1EFED4BC28ACB5AA00BEBBA3 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				1EFED4C328ACB5E100BEBBA3 /* model */,
+				1EFED4C228ACB5D800BEBBA3 /* marker */,
+				1EFED4C128ACB5CF00BEBBA3 /* kml */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		1EFED4C128ACB5CF00BEBBA3 /* kml */ = {
+			isa = PBXGroup;
+			children = (
+				1EFED4C428ACB5ED00BEBBA3 /* KMLUtils.swift */,
+				1EFED4C528ACB5ED00BEBBA3 /* KMLUtilsError.swift */,
+			);
+			path = kml;
+			sourceTree = "<group>";
+		};
+		1EFED4C228ACB5D800BEBBA3 /* marker */ = {
+			isa = PBXGroup;
+			children = (
+				1EFED4C828ACB5F500BEBBA3 /* MarkerProperties.swift */,
+				1EFED4C928ACB5F500BEBBA3 /* MarkerUtils.swift */,
+			);
+			path = marker;
+			sourceTree = "<group>";
+		};
+		1EFED4C328ACB5E100BEBBA3 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				1EFED4CD28ACB5FE00BEBBA3 /* ColorType.swift */,
+				1EFED4CC28ACB5FE00BEBBA3 /* KmlOptionType.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		F456DF6D915EC83116374879 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +209,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EFED4BF28ACB5BA00BEBBA3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,7 +220,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EFED4BA28ACB4C300BEBBA3 /* MarkerUtils.swift in Sources */,
+				1EFED4CE28ACB5FE00BEBBA3 /* KmlOptionType.swift in Sources */,
+				1EFED4C628ACB5ED00BEBBA3 /* KMLUtils.swift in Sources */,
+				1EFED4CA28ACB5F600BEBBA3 /* MarkerProperties.swift in Sources */,
+				1EFED4CF28ACB5FE00BEBBA3 /* ColorType.swift in Sources */,
+				1EFED4D328ACB62400BEBBA3 /* MarkerSheetViewController.swift in Sources */,
+				1EFED4D528ACB62400BEBBA3 /* KmlSheetViewController.swift in Sources */,
+				1EFED4C728ACB5ED00BEBBA3 /* KMLUtilsError.swift in Sources */,
+				1EFED4D428ACB62400BEBBA3 /* ColorSheetViewController.swift in Sources */,
+				1EFED4CB28ACB5F600BEBBA3 /* MarkerUtils.swift in Sources */,
+				1EFED4C028ACB5BA00BEBBA3 /* Colors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
