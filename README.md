@@ -9,7 +9,6 @@ A powerful Google Maps Utils library for iOS
   <img src="Art/img_show_info.png" width="200" height="450">
 </p>
 
-### Installation
 Installation
 --------
 
