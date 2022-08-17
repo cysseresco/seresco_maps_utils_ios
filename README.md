@@ -3,7 +3,7 @@ Seresco Maps Utils iOS
 
 A powerful Google Maps Utils library for iOS
 
-![](Art/img_change_opacity.png)
+<img src="Art/img_change_opacity.png" width="100" height="100">
 
 For more information please see [the website][1]
 
