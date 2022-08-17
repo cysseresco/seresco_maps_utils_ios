@@ -2,7 +2,7 @@
 //  ColorType.swift
 //  TestLibs
 //
-//  Created by diegitsen on 15/08/22.
+//  Created by Diego Salcedo on 15/08/22.
 //
 
 import UIKit

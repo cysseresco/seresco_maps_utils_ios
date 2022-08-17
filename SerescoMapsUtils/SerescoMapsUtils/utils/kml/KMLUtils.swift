@@ -2,7 +2,7 @@
 //  KMLUtils.swift
 //  TestLibs
 //
-//  Created by diegitsen on 10/08/22.
+//  Created by Diego Salcedo on 10/08/22.
 //
 
 import Foundation

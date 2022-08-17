@@ -2,7 +2,7 @@
 //  MarkerProperties.swift
 //  TestLibs
 //
-//  Created by diegitsen on 13/08/22.
+//  Created by Diego Salcedo on 13/08/22.
 //
 
 import Foundation

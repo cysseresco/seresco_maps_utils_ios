@@ -2,7 +2,7 @@
 //  SerescoMapsUtils.h
 //  SerescoMapsUtils
 //
-//  Created by diegitsen on 17/08/22.
+//  Created by Diego Salcedo on 17/08/22.
 //
 
 #import <Foundation/Foundation.h>
