@@ -30,9 +30,8 @@ public class TrackingUtils {
     public func showSavedCoordinates(googleMap: GMSMapView) {
         googleMap.clear()
         let coordinates = preferences.getCoordinates()
-        print("hey!!! \(coordinates)")
         if coordinates.first?.isEmpty == false {
-            let geometryRenderer = kmlUtils.retrieveKml(map: googleMap, coordinates: coordinates, strokeColor: UIColor.yellow!, fillColor: UIColor.green!, strokeWidth: 3)
+            let geometryRenderer = kmlUtils.retrieveKml(map: googleMap, coordinates: coordinates, strokeColor: UIColor.yellow, fillColor: UIColor.green, strokeWidth: 3)
             geometryRenderer?.render()
         }
         // setOnClickListener
