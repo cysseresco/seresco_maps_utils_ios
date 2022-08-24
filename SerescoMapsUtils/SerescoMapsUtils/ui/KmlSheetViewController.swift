@@ -1,6 +1,6 @@
 //
 //  KmlSheetViewController.swift
-//  TestLibs
+//  SerescoMapsUtils
 //
 //  Created by Diego Salcedo on 14/08/22.
 //
@@ -13,7 +13,6 @@ public protocol KmlSheetDelegate {
     func updateOpacity(alpha: Float)
 }
 
-/// Muestra las configuraciones con respecto al KML
 public class KmlSheetViewController: UIViewController {
     
     // MARK: - UI Components

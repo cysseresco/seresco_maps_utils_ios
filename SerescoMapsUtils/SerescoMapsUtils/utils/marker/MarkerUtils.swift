@@ -1,10 +1,10 @@
 //
 //  MarkerUtils.swift
-//  TestLibs
+//  SerescoMapsUtils
 //
 //  Created by Diego Salcedo on 10/08/22.
+//  Copyright © 2022 Seresco. All rights reserved.
 //
-
 import GoogleMapsUtils
 import CodableGeoJSON
 import UIKit
@@ -18,11 +18,6 @@ public class MarkerUtils: UIViewController, GMSMapViewDelegate {
     
     public var delegate: MarkerUtilsDelegate?
     
-    /// Muestra los markers dentro del mapa
-    /// - Parameters:
-    ///   - map: GoogleMap
-    ///   - resource: path del recurso con el json
-    ///   - icon: ícono del marker
     public func retrieveMarkers(map: GMSMapView, resource: String, icon: String) {
         guard let path = Bundle.main.path(forResource: resource, ofType: "json") else {
           return

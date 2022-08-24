@@ -1,8 +1,9 @@
 //
 //  KMLUtilsError.swift
-//  TestLibs
+//  SerescoMapsUtils
 //
 //  Created by Diego Salcedo on 10/08/22.
+//  Copyright © 2022 Seresco. All rights reserved.
 //
 
 import Foundation

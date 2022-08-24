@@ -1,6 +1,6 @@
 //
 //  ColorSheetViewController.swift
-//  TestLibs
+//  SerescoMapsUtils
 //
 //  Created by Diego Salcedo on 13/08/22.
 //
@@ -11,7 +11,6 @@ public protocol ColorSheetDelegate {
     func updateColor(color: UIColor)
 }
 
-/// Muetra las opciones para configurar de acuerdo  a los colores
 public class ColorSheetViewController: UIViewController {
     
     // MARK: - UI Components

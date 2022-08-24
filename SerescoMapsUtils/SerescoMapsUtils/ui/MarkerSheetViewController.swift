@@ -1,14 +1,13 @@
 //
 //  MarkerInfoBottomSheet.swift
-//  TestLibs
+//  SerescoMapsUtils
 //
 //  Created by Diego Salcedo on 13/08/22.
 //
 
 import UIKit
-import Kingfisher
+//import Kingfisher
 
-/// Muestra el detalle del Marker
 public class MarkerSheetViewController: UIViewController {
 
     // MARK: - UI Components
@@ -92,12 +91,12 @@ public class MarkerSheetViewController: UIViewController {
         clearView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(dismissView)))
         
         // KingFisher
-        let url = URL(string: markerProperties?.snippet ?? "")
-        if let urlData = url {
-            let resource = ImageResource(downloadURL: urlData, cacheKey: markerProperties?.name ?? "")
-            placeImage.kf.indicatorType = .activity
-            placeImage.kf.setImage(with: resource)
-        }
+//        let url = URL(string: markerProperties?.snippet ?? "")
+//        if let urlData = url {
+//            let resource = ImageResource(downloadURL: urlData, cacheKey: markerProperties?.name ?? "")
+//            placeImage.kf.indicatorType = .activity
+//            placeImage.kf.setImage(with: resource)
+//        }
         
         //Title
         titleLabel.text = markerProperties?.name ?? ""

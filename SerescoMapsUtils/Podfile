@@ -6,7 +6,7 @@ target 'SerescoMapsUtils' do
   use_frameworks!
 
   # Pods for SerescoMapsUtils
-    pod 'Google-Maps-iOS-Utils', '3.10.3'
-    pod 'CodableGeoJSON'
-    pod 'Kingfisher', '~> 7.0'
+  pod 'Google-Maps-iOS-Utils', '3.10.3'
+  pod 'CodableGeoJSON'
+
 end
