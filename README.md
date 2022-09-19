@@ -38,6 +38,33 @@ func showTrackedRoute() {
 }
 ```
 
+e.g. Using KML, Markers and Cluster Utils
+
+```swift
+import SerescoMapsUtils
+
+
+let kmlUtils = KMLUtils()
+let markerUtils = MarkerUtils()
+
+// import kml map data
+func importKmlData() {
+     let layer = kmlUtils.retrieveKml(map: mapView, pathResource: "name_of_kml_resource", strokeColor: UIColor.black, fillColor: UIColor.gray, strokeWidth: 2)
+     layerSpain.render()
+}
+
+// show KML Settings Panel
+func openKmlSettingsPanel() {
+    let vc = KmlSheetViewController()
+    present(vc, animated: true, completion: nil)
+}
+
+// import Markers and Cluster data
+func showPlacesLocations() {
+     markerUtils.retrieveMarkers(map: self.mapView, resource: "name_of_cluster_resource", icon: "name_of_icon")
+}
+```
+
 Installation
 --------
 
