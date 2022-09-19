@@ -17,6 +17,27 @@ A maps utils library for iOS using Google Maps Api
   <img src="Art/img_manual_tracking.png" width="200" height="450">
 </p>
 
+Usage
+--------
+
+e.g. Displaying Tracking Panel
+
+```swift
+import SerescoMapsUtils
+
+
+let trackingUtils = TrackingUtils()
+
+func openTrackingPanel() {
+    trackingUtils.currentViewController = self
+    trackingUtils.openTrackingPanel()
+}
+
+func showTrackedRoute() {
+    trackingUtils.showSavedCoordinates(googleMap: self.mapView)
+}
+```
+
 Installation
 --------
 
