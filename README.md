@@ -76,6 +76,6 @@ platform :ios, '12.0'
 use_frameworks!
 
 target 'MyApp' do
-  pod 'SerescoMapsUtils', '~> 1.0'
+  pod 'SerescoMapsUtils', '~> 0.0.1'
 end
 ```
