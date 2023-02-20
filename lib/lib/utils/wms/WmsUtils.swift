@@ -10,6 +10,11 @@ import GoogleMaps
 import GoogleMapsUtils
 import CoreLocation
 
+public protocol WmsOptionDelegate {
+    func selectWmsOption(wmsItem: WMSItem)
+    func deselectWmsOption(wmsItem: WMSItem)
+}
+
 public class WmsUtils {
     
     public init() {}

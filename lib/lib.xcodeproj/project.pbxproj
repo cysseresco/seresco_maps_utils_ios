@@ -26,6 +26,8 @@
 		1E4F82D328D93F8D008C8E6B /* TrackingUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4F82D228D93F8C008C8E6B /* TrackingUtils.swift */; };
 		1E94F46929A329130056AD41 /* WMSTileOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E94F46829A329130056AD41 /* WMSTileOverlay.swift */; };
 		1E94F46C29A329720056AD41 /* WmsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E94F46B29A329720056AD41 /* WmsUtils.swift */; };
+		1E94F46E29A32B260056AD41 /* WMSItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E94F46D29A32B260056AD41 /* WMSItem.swift */; };
+		1E94F47029A32B920056AD41 /* WmsSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E94F46F29A32B920056AD41 /* WmsSheetViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,8 @@
 		1E4F82D228D93F8C008C8E6B /* TrackingUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackingUtils.swift; sourceTree = "<group>"; };
 		1E94F46829A329130056AD41 /* WMSTileOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMSTileOverlay.swift; sourceTree = "<group>"; };
 		1E94F46B29A329720056AD41 /* WmsUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WmsUtils.swift; sourceTree = "<group>"; };
+		1E94F46D29A32B260056AD41 /* WMSItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMSItem.swift; sourceTree = "<group>"; };
+		1E94F46F29A32B920056AD41 /* WmsSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WmsSheetViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +151,7 @@
 				1E4F82CC28D93F87008C8E6B /* ColorType.swift */,
 				1E4F82CE28D93F87008C8E6B /* KmlOptionType.swift */,
 				1E4F82CD28D93F87008C8E6B /* TrackingType.swift */,
+				1E94F46D29A32B260056AD41 /* WMSItem.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -164,6 +169,7 @@
 			children = (
 				1E94F46829A329130056AD41 /* WMSTileOverlay.swift */,
 				1E94F46B29A329720056AD41 /* WmsUtils.swift */,
+				1E94F46F29A32B920056AD41 /* WmsSheetViewController.swift */,
 			);
 			path = wms;
 			sourceTree = "<group>";
@@ -250,9 +256,11 @@
 			files = (
 				1E4F82AE28D93AE3008C8E6B /* TestStruct.swift in Sources */,
 				1E4F82BB28D93F1F008C8E6B /* TrackingSheetViewController.swift in Sources */,
+				1E94F46E29A32B260056AD41 /* WMSItem.swift in Sources */,
 				1E4F82D328D93F8D008C8E6B /* TrackingUtils.swift in Sources */,
 				1E4F82B328D93F12008C8E6B /* Colors.swift in Sources */,
 				1E94F46929A329130056AD41 /* WMSTileOverlay.swift in Sources */,
+				1E94F47029A32B920056AD41 /* WmsSheetViewController.swift in Sources */,
 				1E4F82CB28D93F80008C8E6B /* MarkerUtils.swift in Sources */,
 				1E4F82C728D93F78008C8E6B /* KMLUtilsError.swift in Sources */,
 				1E4F82B828D93F1F008C8E6B /* MarkerSheetViewController.swift in Sources */,

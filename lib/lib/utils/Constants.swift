@@ -11,4 +11,5 @@ import Foundation
 struct Constants {
     
     static let COORDS_DATA = "coords_data"
+    static let WMS_ITEMS_DATA = "wms_items_data"
 }
