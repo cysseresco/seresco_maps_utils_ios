@@ -29,17 +29,17 @@ public enum ColorType {
     public var color: UIColor {
         switch self {
         case .colorRed:
-            return .red ?? UIColor.black
+            return .red
         case .colorYellow:
-            return .yellow ?? UIColor.black
+            return .yellow
         case .colorBlue:
-            return .blue ?? UIColor.black
+            return .blue
         case .colorSkyBlue:
-            return .skyBlue ?? UIColor.black
+            return .skyBlue
         case .colorGreen:
-            return .green ?? UIColor.black
+            return .green
         case .colorBrown:
-            return .brown ?? UIColor.black
+            return .brown
         }
     }
 }

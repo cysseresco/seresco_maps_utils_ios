@@ -61,7 +61,6 @@ public class MarkerSheetViewController: UIViewController {
                 NSAttributedString.Key.foregroundColor: UIColor.black,
             ]),
             for: .normal)
-        button.addTarget(self, action: #selector(acceptButtonTapped), for: .touchUpInside)
         button.backgroundColor = UIColor.mainColor
         button.translatesAutoresizingMaskIntoConstraints = false
         button.heightAnchor.constraint(equalToConstant: 50).isActive = true
@@ -83,6 +82,11 @@ public class MarkerSheetViewController: UIViewController {
         setupLayout()
         setupConstraints()
         setupView()
+        setupInteractions()
+    }
+    
+    func setupInteractions() {
+        acceptButton.addTarget(self, action: #selector(acceptButtonTapped), for: .touchUpInside)
     }
     
     func setupView() {
