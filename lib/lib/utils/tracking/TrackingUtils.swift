@@ -38,6 +38,10 @@ public class TrackingUtils {
         // marker
         // stroke color
     }
+    
+    public func printHello() {
+        print("hello world!")
+    }
 }
 
 extension TrackingUtils: TrackingSheetDelegate {
