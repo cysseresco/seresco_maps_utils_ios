@@ -5,6 +5,11 @@
 //  Created by diegitsen on 17/02/23.
 //
 
+import Foundation
+import GoogleMaps
+import GoogleMapsUtils
+import CoreLocation
+
 public class WmsUtils {
     
     public init() {}

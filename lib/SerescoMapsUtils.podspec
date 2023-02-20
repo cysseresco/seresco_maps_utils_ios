@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "SerescoMapsUtils"
-  spec.version      = "0.0.4"
+  spec.version      = "0.0.5"
   spec.summary      = "A framework which contains functionalities about GoogleMaps"
   spec.description  = "A framework that has functionalities in KML, Markers, tracking and much more! using GoogleMaps"
 
