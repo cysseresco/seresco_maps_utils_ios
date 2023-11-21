@@ -96,6 +96,12 @@ public class WmsUtils {
         }
     }
     
+    public func paintIntersection() {
+        print("drawing intersection....")
+        print("loading algorithm....")
+        print("return intersection coordinates....")
+    }
+    
 }
 
 extension WmsUtils: WmsOptionDelegate {
