@@ -75,7 +75,11 @@ extension GeometryUtils: GMSMapViewDelegate {
         if (!startPolygon) {
             let marker = GMSMarker()
             marker.position = coordinate
-            marker.icon = UIImage(systemName: "circle.circle")
+            if #available(iOS 13.0, *) {
+                marker.icon = UIImage(systemName: "circle.circle")
+            } else {
+                marker.icon = UIImage(named: "circle.circle")
+            }
             marker.map = googleMap
             startPolygon = true
         }
