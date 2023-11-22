@@ -9,64 +9,6 @@ import UIKit
 import GoogleMaps
 import GoogleMapsUtils
 
-class GeometryUtils: NSObject {
-    
-    public var googleMap: GMSMapView
-    public var polygon: [CLLocationCoordinate2D] = []
-    public var polygons: [[CLLocationCoordinate2D]] = []
-    public var finishInListOfPolygonCallback: (([[CLLocationCoordinate2D]]) -> Void)?
-    public var finishInPolygonCallback: (([CLLocationCoordinate2D]) -> Void)?
-    public var intersections: [[CLLocationCoordinate2D]] = []
-    
-    public override init() {
-        self.googleMap = GMSMapView()
-        super.init()
-    }
-    
-    public init(googleMap: GMSMapView, polygon: [CLLocationCoordinate2D]) {
-        self.googleMap = googleMap
-        self.polygon = polygon
-    }
-    
-    public init(googleMap: GMSMapView, polygons: [[CLLocationCoordinate2D]]) {
-        self.googleMap = googleMap
-        self.polygons = polygons
-    }
-    
-    var coordinatesTapped: [CLLocationCoordinate2D] = []
-    var startPolygon = false
- 
-    public func drawIntersectionInPolygon(coordinatesPolygon: [CLLocationCoordinate2D], polygonDrawed: GMSPolygon) {
-        var coordinatesDottedInPolygon = [CLLocationCoordinate2D]()
-        for x in 0..<(coordinatesPolygon.count - 1) {
-            let line = Line(p1: coordinatesPolygon[x], p2: coordinatesPolygon[x+1])
-            let points = line.getPoints(quantity: 30)
-            coordinatesDottedInPolygon.append(contentsOf: points)
-        }
-
-        var intersects: [CLLocationCoordinate2D] = []
-        coordinatesDottedInPolygon.forEach { coordinate in
-            if polygonDrawed.contains(coordinate: coordinate) {
-                intersects.append(coordinate)
-            }
-        }
-        intersections.append(intersects)
-        
-        let mutablePath = GMSMutablePath()
-        intersects.forEach { coordinate in
-            mutablePath.add(coordinate)
-        }
-    
-        let polygon = GMSPolygon(path: mutablePath)
-        polygon.fillColor = .blue
-        polygon.strokeColor = .purple
-        polygon.strokeWidth = 3
-        polygon.map = googleMap
-    }
-    
-    
-}
-
 extension GeometryUtils: GMSMapViewDelegate {
 
     func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
@@ -113,11 +55,13 @@ extension GeometryUtils: GMSMapViewDelegate {
         if polygons.isEmpty {
             drawIntersectionInPolygon(coordinatesPolygon: polygon, polygonDrawed: polygonDrawed)
             finishInPolygonCallback?(intersections.first ?? [])
+            finishDrawingOfPolygon()
         } else {
             polygons.forEach { polygonCoordinates in
                 drawIntersectionInPolygon(coordinatesPolygon: polygonCoordinates, polygonDrawed: polygonDrawed)
             }
             finishInListOfPolygonCallback?(intersections)
+            finishDrawingOfPolygon()
         }
         
         coordinatesTapped = []
@@ -126,4 +70,3 @@ extension GeometryUtils: GMSMapViewDelegate {
         return true
     }
 }
-
