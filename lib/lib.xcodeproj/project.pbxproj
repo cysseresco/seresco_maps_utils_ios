@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1E4F828228D939BC008C8E6B /* lib.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E4F828128D939BC008C8E6B /* lib.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1E4F82AE28D93AE3008C8E6B /* TestStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4F82AD28D93AE3008C8E6B /* TestStruct.swift */; };
 		1E4F82B328D93F12008C8E6B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4F82B228D93F12008C8E6B /* Colors.swift */; };
 		1E4F82B828D93F1F008C8E6B /* MarkerSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4F82B428D93F1F008C8E6B /* MarkerSheetViewController.swift */; };
 		1E4F82B928D93F1F008C8E6B /* KmlSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4F82B528D93F1F008C8E6B /* KmlSheetViewController.swift */; };
@@ -24,6 +23,8 @@
 		1E4F82D028D93F87008C8E6B /* TrackingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4F82CD28D93F87008C8E6B /* TrackingType.swift */; };
 		1E4F82D128D93F87008C8E6B /* KmlOptionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4F82CE28D93F87008C8E6B /* KmlOptionType.swift */; };
 		1E4F82D328D93F8D008C8E6B /* TrackingUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4F82D228D93F8C008C8E6B /* TrackingUtils.swift */; };
+		1E5011D92B0E4BF0007428C9 /* GeometryUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5011D82B0E4BF0007428C9 /* GeometryUtils.swift */; };
+		1E5011DB2B0E4C43007428C9 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5011DA2B0E4C43007428C9 /* Line.swift */; };
 		1E94F46929A329130056AD41 /* WMSTileOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E94F46829A329130056AD41 /* WMSTileOverlay.swift */; };
 		1E94F46C29A329720056AD41 /* WmsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E94F46B29A329720056AD41 /* WmsUtils.swift */; };
 		1E94F46E29A32B260056AD41 /* WMSItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E94F46D29A32B260056AD41 /* WMSItem.swift */; };
@@ -33,7 +34,6 @@
 /* Begin PBXFileReference section */
 		1E4F827E28D939BC008C8E6B /* SerescoMapsUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SerescoMapsUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E4F828128D939BC008C8E6B /* lib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lib.h; sourceTree = "<group>"; };
-		1E4F82AD28D93AE3008C8E6B /* TestStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestStruct.swift; sourceTree = "<group>"; };
 		1E4F82B228D93F12008C8E6B /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		1E4F82B428D93F1F008C8E6B /* MarkerSheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkerSheetViewController.swift; sourceTree = "<group>"; };
 		1E4F82B528D93F1F008C8E6B /* KmlSheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KmlSheetViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		1E4F82CD28D93F87008C8E6B /* TrackingType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackingType.swift; sourceTree = "<group>"; };
 		1E4F82CE28D93F87008C8E6B /* KmlOptionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KmlOptionType.swift; sourceTree = "<group>"; };
 		1E4F82D228D93F8C008C8E6B /* TrackingUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackingUtils.swift; sourceTree = "<group>"; };
+		1E5011D82B0E4BF0007428C9 /* GeometryUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryUtils.swift; sourceTree = "<group>"; };
+		1E5011DA2B0E4C43007428C9 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 		1E94F46829A329130056AD41 /* WMSTileOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMSTileOverlay.swift; sourceTree = "<group>"; };
 		1E94F46B29A329720056AD41 /* WmsUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WmsUtils.swift; sourceTree = "<group>"; };
 		1E94F46D29A32B260056AD41 /* WMSItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMSItem.swift; sourceTree = "<group>"; };
@@ -85,11 +87,11 @@
 		1E4F828028D939BC008C8E6B /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				1E4F82C228D93F69008C8E6B /* model */,
 				1E4F82B128D93F09008C8E6B /* utils */,
 				1E4F82B028D93F05008C8E6B /* ui */,
 				1E4F82AF28D93EFF008C8E6B /* assets */,
 				1E4F828128D939BC008C8E6B /* lib.h */,
-				1E4F82AD28D93AE3008C8E6B /* TestStruct.swift */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -116,9 +118,9 @@
 		1E4F82B128D93F09008C8E6B /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				1E5011D72B0E4BDE007428C9 /* geometry */,
 				1E94F46729A328EF0056AD41 /* wms */,
 				1E4F82C328D93F70008C8E6B /* tracking */,
-				1E4F82C228D93F69008C8E6B /* model */,
 				1E4F82C128D93F63008C8E6B /* marker */,
 				1E4F82C028D93F55008C8E6B /* kml */,
 				1E4F82BE28D93F52008C8E6B /* Preferences.swift */,
@@ -162,6 +164,15 @@
 				1E4F82D228D93F8C008C8E6B /* TrackingUtils.swift */,
 			);
 			path = tracking;
+			sourceTree = "<group>";
+		};
+		1E5011D72B0E4BDE007428C9 /* geometry */ = {
+			isa = PBXGroup;
+			children = (
+				1E5011D82B0E4BF0007428C9 /* GeometryUtils.swift */,
+				1E5011DA2B0E4C43007428C9 /* Line.swift */,
+			);
+			path = geometry;
 			sourceTree = "<group>";
 		};
 		1E94F46729A328EF0056AD41 /* wms */ = {
@@ -254,7 +265,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E4F82AE28D93AE3008C8E6B /* TestStruct.swift in Sources */,
 				1E4F82BB28D93F1F008C8E6B /* TrackingSheetViewController.swift in Sources */,
 				1E94F46E29A32B260056AD41 /* WMSItem.swift in Sources */,
 				1E4F82D328D93F8D008C8E6B /* TrackingUtils.swift in Sources */,
@@ -262,10 +272,12 @@
 				1E94F46929A329130056AD41 /* WMSTileOverlay.swift in Sources */,
 				1E94F47029A32B920056AD41 /* WmsSheetViewController.swift in Sources */,
 				1E4F82CB28D93F80008C8E6B /* MarkerUtils.swift in Sources */,
+				1E5011D92B0E4BF0007428C9 /* GeometryUtils.swift in Sources */,
 				1E4F82C728D93F78008C8E6B /* KMLUtilsError.swift in Sources */,
 				1E4F82B828D93F1F008C8E6B /* MarkerSheetViewController.swift in Sources */,
 				1E4F82CA28D93F80008C8E6B /* MarkerProperties.swift in Sources */,
 				1E4F82D128D93F87008C8E6B /* KmlOptionType.swift in Sources */,
+				1E5011DB2B0E4C43007428C9 /* Line.swift in Sources */,
 				1E4F82BD28D93F4C008C8E6B /* Constants.swift in Sources */,
 				1E4F82B928D93F1F008C8E6B /* KmlSheetViewController.swift in Sources */,
 				1E4F82CF28D93F87008C8E6B /* ColorType.swift in Sources */,

@@ -70,13 +70,9 @@ public class KMLUtils: UIViewController, GMSMapViewDelegate {
     
     public func retrieveKml(map: GMSMapView, coordinates: [[Double]], strokeColor: UIColor, fillColor: UIColor, strokeWidth: CGFloat) -> GMUGeometryRenderer? {
         let resource = "{ \"type\": \"FeatureCollection\", \"features\": [ {  \"type\": \"Feature\", \"properties\": {}, \"geometry\": {  \"type\": \"LineString\",  \"coordinates\": \(coordinates) } } ] }"
-       // let resource = "{ \"type\": \"FeatureCollection\", \"features\": [ {  \"type\": \"Feature\", \"properties\": {}, \"geometry\": {  \"type\": \"LineString\", \"coordinates\": [[-77.05898129163509, -12.07178], [-77.058981, -12.071776938153576], [-77.059236, -12.076179508798393]] } } ] }"
-        print("hey!! \(resource)")
         guard let data = resource.data(using: .utf8) else {
-            print("hey! :(((((")
             return nil
         }
-        print("hey! paso!")
         let geoJsonParser = GMUGeoJSONParser(data: data)
         geoJsonParser.parse()
         let style = GMUStyle(styleID: "kmlStyle",

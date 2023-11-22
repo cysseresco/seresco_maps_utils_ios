@@ -469,53 +469,9 @@ public class TrackingSheetViewController: UIViewController, CLLocationManagerDel
         delegate?.sendCoordinates(coordinates: coordinatesObtained)
     }
     @objc func processAutomaticTracking() {
-        print("hey! start --- \(currentAutomaticTrackingType.time)")
         locationManager.startUpdatingLocation()
     }
 }
-
-//extension TrackingSheetViewController {
-//    func showToast(message: String, delay: TimeInterval = 3.0) {
-//      if let keyWindow = UIApplication.shared.keyWindow, !isShowingToast {
-//        let margin: CGFloat = 15.0
-//        let padding: CGFloat = 5.0
-//        let toastLabel = UILabel()
-//        toastLabel.alpha = 1.0
-//        toastLabel.backgroundColor = UIColor.black.withAlphaComponent(0.6)
-//        toastLabel.textColor = UIColor.white
-//        toastLabel.textAlignment = .center
-////        toastLabel.font = UIFont(name: "Montserrat-Regular", size: 14.0)
-//        toastLabel.clipsToBounds = true
-//        toastLabel.numberOfLines = 0
-//
-//        toastLabel.text = message
-//        toastLabel.sizeToFit()
-//        toastLabel.frame.size.width += (padding * 4)
-//
-//        if toastLabel.frame.size.width > keyWindow.frame.size.width - (margin * 2) {
-//          toastLabel.frame.size.width = keyWindow.frame.size.width - margin
-//          toastLabel.text = message
-//        }
-//
-//        toastLabel.frame = CGRect(x: (keyWindow.frame.size.width / 2) - (toastLabel.frame.size.width / 2),
-//                                  y: keyWindow.frame.size.height -
-//                                    keyWindow.safeAreaInsets.bottom -
-//                                    toastLabel.frame.height - margin,
-//                                  width: toastLabel.frame.width,
-//                                  height: toastLabel.frame.height + padding)
-//
-//        keyWindow.addSubview(toastLabel)
-//
-//        isShowingToast = true
-//        UIView.animate(withDuration: 0.3, delay: delay, options: .curveEaseOut, animations: {
-//          toastLabel.alpha = 0.0
-//        }, completion: {(isCompleted) in
-//          toastLabel.removeFromSuperview()
-//            self.isShowingToast = false
-//        })
-//      }
-//    }
-//}
 
 class AutomaticTrackingTypeTapGesture: UITapGestureRecognizer {
     var automaticTrackingType: AutomaticTrackingType = .fiveSeconds
