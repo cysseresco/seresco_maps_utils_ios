@@ -17,7 +17,7 @@ A maps utils library for iOS using Google Maps Api
   <img src="Art/img_manual_tracking.png" width="200" height="400">
 </p>
 
-https://github.com/cysseresco/seresco_maps_utils_ios/assets/107874527/16d3d00e-0be0-425d-bb5d-7ad0d387b0fc
+https://github.com/cysseresco/seresco_maps_utils_ios/assets/107874527/cb49fa86-e3f0-4bd0-a141-5589d3dff69b
 
 Usage
 --------
